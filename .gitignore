@@ -1,0 +1,6 @@
+bower_components/
+node_modules/
+_dist/
+_debug/
+.vscode/
+jsconfig.json/

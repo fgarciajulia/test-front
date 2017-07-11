@@ -1,0 +1,126 @@
+%font-family {
+    font-family: 'Droid Sans', sans-serif;
+}
+
+%font-p-xxs {
+    font-size: 11px;
+    font-weight: 500;
+    @extend %font-family;
+    margin: 7px 0 0 0;
+}
+
+%font-p-xs {
+    font-size: 12px;
+    font-weight: 500;
+    @extend %font-family;
+    margin: 7px 0 0 0;
+}
+
+%font-p-sm {
+    font-size: 17px;
+    font-weight: 500;
+    @extend %font-family;
+    margin: 10px 0;
+}
+
+%font-p-md {
+    font-size: 20px;
+    font-weight: 500;
+    @extend %font-family;
+    margin: 11px 0;
+}
+
+%font-h3 {
+    font-size: 16px;
+    font-weight: 800;
+    @extend %font-family;
+    margin: 10px 0;
+}
+
+%font-h2 {
+    font-size: 29px;
+    font-weight: 600;
+    @extend %font-family;
+    margin: 10px 0;
+}
+
+%font-h1-md {
+    font-size: 38px;
+    font-weight: 700;
+    @extend %font-family;
+    margin: 10px 0;
+}
+
+%font-h1-lg {
+    font-size: 55px;
+    font-weight: 700;
+    @extend %font-family;
+    margin: 10px 0;
+}
+
+@media (max-width: 992px) {
+    %font-h1-lg {
+        font-size: 30px;
+        margin: 10px 0;
+    }
+    %font-h2 {
+        font-size: 22px;
+        margin: 10px 0;
+    }
+    %font-h3 {
+        font-size: 15px;
+        margin: 10px 0;
+    }
+    %font-p-xxs {
+        font-size: 10px;
+    }
+    %font-p-xs {
+        font-size: 14px;
+        margin: 10px 0;
+    }
+    %font-p-md {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    %font-h1-lg {
+        font-size: 24px;
+        margin: 10px 0;
+    }
+    %font-h2 {
+        font-size: 16px;
+        margin: 10px 0;
+    }
+    %font-h2 {
+        font-size: 14px;
+        margin: 10px 0;
+    }
+    %font-p-xs {
+        font-size: 13px;
+        margin: 10px 0;
+    }
+    %font-p-md {
+        font-size: 13px;
+    }
+}
+
+h1 {
+    @extend %font-h1-lg;
+}
+
+h2 {
+    @extend %font-h2;
+}
+
+h3 {
+    @extend %font-h3;
+}
+
+p {
+    @extend %font-p-sm;
+}
+
+text {
+    @extend %font-family;
+}

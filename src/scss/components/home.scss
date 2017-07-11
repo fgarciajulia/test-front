@@ -1,0 +1,120 @@
+#home {
+  .isFirstTime .item {
+    animation-name: fadeInUp;
+    animation-duration: .6s;
+    animation-fill-mode: both
+  }
+  .isFirstTime #newItem {
+    display: none;
+  }
+  #listContainer.isFirstTime #newItem {
+    display: none;
+  }
+  .item {
+    background-color: #fff;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    padding-top: 15px;
+    overflow: hidden;
+    border-radius: 3px;
+    cursor: move;
+    p.paragraphDescription:hover {
+      background: rgba(231, 231, 231, 0.73);
+      cursor: pointer;
+      &+i.fa.fa-pencil {
+        display: block;
+      }
+    }
+    img {
+      transition: box-shadow .5s;
+      border-radius: 2px;
+      &:hover {
+        cursor: pointer;
+        box-shadow: 0 0 8px 2px #7a7a7a;
+      }
+    }
+    label:hover {
+      &+i.fa.fa-pencil {
+        display: block;
+        position: absolute;
+        z-index: 9;
+        right: 10px;
+      }
+    }
+    .add-item,
+    .edit,
+    .delete,
+    .cancel {
+      clear: both;
+      float: left;
+    }
+    i.fa.fa-pencil {
+      float: right;
+      margin-top: -40px;
+      -ms-touch-action: none;
+      touch-action: none;
+      display: none;
+      margin-right: 10px;
+      color: #ff7f7f;
+      font-size: 24px;
+    }
+  }
+  textarea {
+    width: 100%;
+    height: 166px;
+  }
+  .save {
+    display: none;
+  }
+  #isLoadingNoTouch,
+  #isLoading {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0%;
+    right: 0;
+    z-index: 99;
+    opacity: 1;
+  }
+  #isLoading {
+    background: rgba(239, 239, 239, 0.35);
+    transition: left 1s;
+    transition-delay: 1s;
+  }
+  &.hide-loading {
+    #isLoadingNoTouch,
+    #isLoading {
+      left: 100%;
+    }
+  }
+  #isLoading {
+    img {
+      opacity: 0;
+      position: absolute;
+      width: 70px;
+      left: calc(50% - 35px);
+      top: calc(50% - 35px);
+    }
+  }
+  &:not(.hide-loading) {
+    #isLoading {
+      img {
+        transition-property: opacity;
+        transition-duration: .5s;
+        transition-delay: 1s;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 20%, 0)
+  }
+  100% {
+    opacity: 1;
+    transform: none
+  }
+}

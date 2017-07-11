@@ -1,0 +1,31 @@
+{
+  "name": "www.dacu.com.ar",
+  "version": "1.0.0",
+  "description": "Transformando ideas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bower": "^1.7.9",
+    "eslint": "^4.2.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-clean": "^0.3.2",
+    "gulp-clean-css": "^3.0.4",
+    "gulp-concat": "^2.6.0",
+    "gulp-file-include": "^1.0.0",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-minify": "1.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-strip-json-comments": "^2.1.0",
+    "gulp-util": "^3.0.7",
+    "gulp-watch": "^4.3.8",
+    "run-sequence": "^2.0.0",
+    "sass-lint": "^1.10.2",
+    "typescript": "^2.0.10"
+  }
+}
