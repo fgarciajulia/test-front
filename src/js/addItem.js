@@ -37,7 +37,6 @@ function submitShow() {
     $('#submit').show();
   }else{
     $('#submit').hide();
-
   }
 }
 

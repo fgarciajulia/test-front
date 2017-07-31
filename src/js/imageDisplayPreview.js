@@ -31,6 +31,16 @@ function renderDisplayPreview(img, width, height, imgsrc) {
       '<p class="btn btn-success add-item">Ok</p>'
     );
     $('#submit').hide();
+    $('.image-thumbnail').html('');
+    $('.image-thumbnail').append(
+      '<label for="inputImg">'+
+      ' <img class="img-responsive" src="image/thumbnail.png">'+
+      '</label>' +
+      '<i class="fa fa-pencil" aria-hidden="true"></i>'
+    );
+    $('#submit').hide();
+    $('#inputImg').val('');
+    changeListenerNewImageItem();
   }
 }
 function changeListenerNewImageItem(){
