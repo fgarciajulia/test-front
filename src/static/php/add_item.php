@@ -27,10 +27,11 @@ if ($_FILES !== [] &&  $_POST['description'] !== ''){
 	
 	if ($width == 320 && $height == 320 && move_uploaded_file($_FILES['userFile']['tmp_name'], $newfileNameToMove)) {
 		// 		File is valid, and was successfully uploaded
-				    $item = (object)[
-				      "description" => $_POST['description'],
-				      "url" => $newfileNameToPersist,
-				    ];
+		$description = strip_tags($_POST['description']);
+		$item = (object)[
+			"description" => $description,
+			"url" => $newfileNameToPersist,
+		];
 		addItemToJson($item);
 	}
 	else {
